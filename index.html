@@ -4,13 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saroj Kumar</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta3/css/bootstrap.min.css">
+  <title>Saroj Kumar - Resume</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta2/css/bootstrap.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
+      background-color: #f2f2f2;
       padding: 20px;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #333333;
     }
 
     .section {
@@ -18,64 +31,33 @@
     }
 
     .section-title {
+      margin-bottom: 20px;
+      text-transform: uppercase;
       font-weight: bold;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .section-content {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .contact-info {
-      margin-bottom: 20px;
-    }
-
-    .contact-info a {
-      color: #333;
-      text-decoration: none;
-    }
-
-    .experience-item {
-      margin-bottom: 20px;
+      letter-spacing: 1px;
     }
 
     .experience-item-title {
+      color: #007bff;
       font-weight: bold;
-      font-size: 20px;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
 
-    .experience-item-date {
-      font-size: 18px;
+    .experience-item-duration {
+      font-size: 14px;
       font-style: italic;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
 
     .experience-item-description {
-      font-size: 18px;
       margin-bottom: 10px;
     }
 
-    .technical-competencies ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .publications-item {
+    .certifications-item p {
       margin-bottom: 10px;
     }
 
-    .projects-item {
-      margin-bottom: 20px;
-    }
-
-    .certifications-item {
-      margin-bottom: 10px;
-    }
-
-    .activities-item {
+    .activities-item p {
       margin-bottom: 10px;
     }
   </style>
@@ -84,145 +66,136 @@
 <body>
   <div class="container">
     <h1>Saroj Kumar</h1>
-    <div class="contact-info">
-      <p>Phone: +917053526838 | Email: saroj57_scs@jnu.ac.in | LinkedIn: <a href="https://www.linkedin.com/in/saroj-kumar-173a6a108">https://www.linkedin.com/in/saroj-kumar-173a6a108</a></p>
+    <p>Phone: +917053526838 | Email: saroj57_scs@jnu.ac.in | LinkedIn: <a href="https://www.linkedin.com/in/saroj-kumar-173a6a108">https://www.linkedin.com/in/saroj-kumar-173a6a108</a></p>
+
+    <div class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="education-item">
+        <h3 class="experience-item-title">Jawaharlal Nehru University</h3>
+        <p class="experience-item-duration">August 2019 - April 2022</p>
+        <p class="experience-item-description">Master of Technology in Computer Science</p>
+        <p class="experience-item-description">Percentage: 80.80%</p>
+      </div>
+
+      <div class="education-item">
+        <h3 class="experience-item-title">Maharaja Surajmal Institute of Technology, Janakpuri</h3>
+        <p class="experience-item-duration">May 2014 - May 2018</p>
+        <p class="experience-item-description">Bachelor of Technology in Information Technology</p>
+        <p class="experience-item-description">Percentage: 78.71%</p>
+      </div>
+
+      <div class="education-item">
+        <h3 class="experience-item-title">Public School Darbhanga, Darbhanga</h3>
+        <p class="experience-item-duration">April 2017 - April 2018</p>
+        <p class="experience-item-description">All India Secondary School Examination</p>
+        <p class="experience-item-description">Grade: 9.6 CGPA</p>
+      </div>
     </div>
 
     <div class="section">
-      <h2 class="section-title">EDUCATION</h2>
-      <div class="section-content">
-        <h3>Jawaharlal Nehru University</h3>
-        <p>New Delhi, India</p>
-        <p>August 2019 - April 2022</p>
-        <p>Master of Technology in Computer Science — percentage of 80.80%</p>
-      </div>
-
-      <div class="section-content">
-        <h3>Maharaja Surajmal Institute of Technology, Janakpuri</h3>
-        <p>New Delhi, India</p>
-        <p>May 2014 – May 2018</p>
-        <p>Bachelor of Technology in Information Technology — percentage of 78.71%</p>
-      </div>
-
-      <div class="section-content">
-        <h3>Public School Darbhanga, Darbhanga</h3>
-        <p>Bihar, India</p>
-        <p>April 2017 – April 2018</p>
-        <p>All India Secondary School Examination. Grade - 9.6 CGPA</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">RELEVANT EXPERIENCE</h2>
-
+      <h2 class="section-title">Relevant Experience</h2>
       <div class="experience-item">
         <h3 class="experience-item-title">Jawaharlal Nehru University (Genome Science and Technology Lab)</h3>
-        <p class="experience-item-date">December 2021 - Present</p>
+        <p class="experience-item-duration">December 2021 - Present</p>
         <p class="experience-item-description">Research Associate (Supervisor - Prof. Binay Ranjan Panda)</p>
-        <ul>
-          <li>Used a deep learning based approach to predict the azadirachtin content in Azadirachta Indica fruits.</li>
-          <li>Predicted the sweetness of Citrus nobilis x Citrus deliciosa (Kinnow mandarin) fruits using the images of the fruits using YOLOv5 and YOLOR framework.</li>
-          <li>Modified and custom trained SOTA YOLOv5 architecture using the in house generated data of Azadirachta Indica fruit images and their corresponding azadirachtin metabolite content, evaluated their performance and fine-tuned weights by doing Hyperparameter Evolution (using Genetic Algorithm).</li>
-          <li>Helped in creation of an android mobile app to detect the azadirachtin level in the Azadirachta Indica fruit.</li>
-        </ul>
+        <p class="experience-item-description">- Used a deep learning based approach to predict the azadirachtin content in Azadirachta Indica fruits.</p>
+        <p class="experience-item-description">- Predicted the sweetness of Citrus nobilis x Citrus deliciosa (Kinnow mandarin) fruits using the images of the fruits using YOLOv5 and YOLOR framework.</p>
+        <p class="experience-item-description">- Modified and custom trained SOTA YOLOv5 architecture using the in-house generated data of Azadirachta Indica fruit images and their corresponding azadirachtin metabolite content.</p>
+        <p class="experience-item-description">- Helped in the creation of an Android mobile app to detect the azadirachtin level in the Azadirachta Indica fruit.</p>
       </div>
 
       <div class="experience-item">
         <h3 class="experience-item-title">Irenovate LLP (E-commerce platform)</h3>
-        <p class="experience-item-date">December 2016 - January 2018</p>
+        <p class="experience-item-duration">December 2016 - January 2018</p>
         <p class="experience-item-description">Web Developer</p>
-        <ul>
-          <li>Created the backend as well as the frontend of the website.</li>
-          <li>Used Django for the backend and HTML, CSS, and Bootstrap 5 for the frontend of the E-commerce platform.</li>
-          <li>Developed technical competency in full stack development of a website including frontend and backend.</li>
-        </ul>
+        <p class="experience-item-description">- Created the backend as well as the frontend of the website using Django, HTML, CSS, and Bootstrap 5.</p>
+        <p class="experience-item-description">- Developed technical competency in full-stack development of a website, including frontend and backend.</p>
       </div>
     </div>
 
     <div class="section">
-      <h2 class="section-title">TECHNICAL COMPETENCIES</h2>
-      <div class="technical-competencies">
-        <ul>
-          <li>Programming languages: Python, C, C++, Java, and JavaScript</li>
-          <li>Libraries, Toolkits, and Frameworks: NumPy, Matplotlib, Pandas, Seaborn, Tableau, Scikit-Learn, Choregraphe, TensorFlow, PyTorch, Android Studio, Git, Flask, and Heroku</li>
-        </ul>
-      </div>
+      <h2 class="section-title">Technical Competencies</h2>
+      <p>Programming languages: Python, C, C++, Java, and JavaScript</p>
+      <p>Libraries, Toolkits, and Frameworks: NumPy, Matplotlib, Pandas, Seaborn, Tableau, Scikit-Learn, Choregraphe, TensorFlow, PyTorch, Android Studio, Git, Flask, and Heroku</p>
     </div>
 
     <div class="section">
-      <h2 class="section-title">PUBLICATIONS</h2>
+      <h2 class="section-title">Publications</h2>
       <div class="publications-item">
-        <p>Kumar, Saroj and Choudhary, Ayesha, 2022, Camera based Activity Recognition for Assisted Living Applications, accepted at IEEE sponsored conference named eSmarTa, under publication</p>
-        <p>We implemented a real-time fall detection system as part of camera based activity recognition for assisted living applications.</p>
-        <p>YOLOv5, which is an object detector, was repurposed for activity recognition to detect the fall events using a camera in real time.</p>
+        <h3 class="experience-item-title">Kumar, Saroj and Choudhary, Ayesha (2022)</h3>
+        <p class="experience-item-description">Camera-based Activity Recognition for Assisted Living Applications, accepted at IEEE sponsored conference named eSmarTa, under publication</p>
+        <p class="experience-item-description">- Implemented a real-time fall detection system as part of camera-based activity recognition for assisted living applications.</p>
+        <p class="experience-item-description">- Repurposed YOLOv5, an object detector, for activity recognition to detect fall events using a camera in real time.</p>
       </div>
 
       <div class="publications-item">
-        <p>Udeechee and Kumar, Saroj, 2022, Factors influencing contraceptive usage and related trends among Scheduled Caste and Scheduled Tribes women in India, Significance of Technology in Empowering Tribal Community of India, under publication</p>
-        <p>Performed statistical analysis on NFHS 5 dataset to understand the use of family planning methods such contraception, among the women in Scheduled Caste and Scheduled Tribes community (SC&ST) in India.</p>
-        <p>The study tells about the state of women in contraception usage and factors affecting its usage in SC&ST community in India.</p>
+        <h3 class="experience-item-title">Udeechee and Kumar, Saroj (2022)</h3>
+        <p class="experience-item-description">Factors influencing contraceptive usage and related trends among Scheduled Caste and Scheduled Tribes women in India, Significance of Technology in Empowering Tribal Community of India, under publication</p>
+        <p class="experience-item-description">- Performed statistical analysis on NFHS 5 dataset to understand the use of family planning methods such as contraception among women in the Scheduled Caste and Scheduled Tribes community in India.</p>
       </div>
     </div>
 
     <div class="section">
-      <h2 class="section-title">PROJECTS</h2>
+      <h2 class="section-title">Projects</h2>
       <div class="projects-item">
         <h3 class="experience-item-title">TRACKIT</h3>
-        <p class="experience-item-description">Built a web app to track the location of a person and show the route they followed as they move around.</p>
-        <p class="experience-item-description">It can use GPS of the phone to track the location and if not found, it can use the cell tower or WiFi triangulation to approximate your location with the described accuracy.</p>
+        <p class="experience-item-description">- Built a web app to track the location of a person and show the route they followed as they move around.</p>
+        <p class="experience-item-description">- Utilized GPS, cell tower, or WiFi triangulation to approximate the location.</p>
       </div>
 
       <div class="projects-item">
         <h3 class="experience-item-title">FLIPBOARD</h3>
-        <p class="experience-item-description">Implemented a web interface duplicating the functionality of Flipboard platform.</p>
-        <p class="experience-item-description">Used HTML, CSS, and Bootstrap 5 to achieve the look and responsiveness of the original Flipboard platform.</p>
+        <p class="experience-item-description">- Implemented a web interface duplicating the functionality of the Flipboard platform using HTML, CSS, and Bootstrap 5.</p>
       </div>
 
       <div class="projects-item">
         <h3 class="experience-item-title">Handwriting Recognition</h3>
-        <p class="experience-item-description">Used the PyTorch library to implement a handwriting recognition framework.</p>
-        <p class="experience-item-description">Used the publicly available MNIST dataset to recognize the handwriting of a person.</p>
+        <p class="experience-item-description">- Used the PyTorch library to implement a handwriting recognition framework.</p>
+        <p class="experience-item-description">- Utilized the publicly available MNIST dataset to recognize handwriting.</p>
       </div>
     </div>
 
     <div class="section">
-      <h2 class="section-title">CERTIFICATIONS AND COURSES</h2>
+      <h2 class="section-title">Certifications and Courses</h2>
       <div class="certifications-item">
         <p>Machine Learning | Coursera (By Andrew Ng)</p>
-        <p>Studied fundamental concepts Machine learning and the math behind these concepts.</p>
-        <p>As part of the course implemented several machine learning algorithms such as Linear regression, Logistic regression, K-nearest neighbor algorithm, Support vector machine, etc.</p>
+        <p>- Studied fundamental concepts of machine learning and implemented several algorithms.</p>
       </div>
 
       <div class="certifications-item">
         <p>Introduction to Data Science in Python | University of Michigan</p>
-        <p>Learned how to get meaningful information out of large datasets and perform analysis using different python libraries.</p>
-        <p>Learned NumPy and Pandas framework to perform data manipulation at scale to gain insight into the trends in them.</p>
+        <p>- Learned data manipulation and analysis using Python libraries like NumPy and Pandas.</p>
       </div>
 
       <div class="certifications-item">
         <p>CS231n: Convolutional Neural Networks for Visual Recognition | Stanford University</p>
-        <p>Learned about different CNNs such as AlexNet, ResNet, GoogleNet, Recurrent Neural Net, etc. and their advantages and shortcomings.</p>
-        <p>Implemented key concepts used in CNN such as backpropagation from scratch.</p>
+        <p>- Learned about different CNN architectures and implemented key concepts from scratch.</p>
       </div>
 
       <div class="certifications-item">
         <p>Core Java | Hewlett Packard Enterprise</p>
-        <p>Learned core concepts of JAVA and how to use it to program solutions to different problems.</p>
+        <p>- Learned core concepts of Java programming language.</p>
       </div>
 
       <div class="certifications-item">
-        <p>Web Development | Udemy</p>
-        <p>Learned web development using HTML, CSS, JavaScript, and Bootstrap 5.</p>
-        <p>Created different web pages using the learned concepts.</p>
+        <p>Flask | Udemy</p>
+        <p>- Learned the Flask framework in Python to create a blogging website.</p>
       </div>
     </div>
 
     <div class="section">
-      <h2 class="section-title">ACTIVITIES</h2>
+      <h2 class="section-title">Extra-Curricular Activities</h2>
       <div class="activities-item">
-        <p>Volunteered as a mentor at CodeHers, an initiative to teach programming to underprivileged girls.</p>
+        <p>Participated in NETCRYPT Conference</p>
+        <p>- Contributed to the successful completion of the 2nd International Conference on Networks and Cryptology.</p>
+      </div>
+
+      <div class="activities-item">
+        <p>Event head at Avensis, Annual fest of MSIT</p>
+        <p>- Organized a coding event and received the Best Event Award.</p>
       </div>
     </div>
+
   </div>
 </body>
 
