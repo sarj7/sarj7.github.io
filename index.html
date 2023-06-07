@@ -1,203 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saroj Kumar - Resume</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta2/css/bootstrap.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      padding: 20px;
-    }
+    <!-- 
+      TODO
 
-    .container {
-      background-color: #ffffff;
-      padding: 30px;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
 
-    h1,
-    h2,
-    h3 {
-      color: #333333;
-    }
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
 
-    .section {
-      margin-bottom: 30px;
-    }
+      This should be the same across all pages.
+     -->
+    <link rel="icon" href="./assets/images/1311.png" />
+		<title>Unemployables Portfolio</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    .section-title {
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
+		<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
 
-    .experience-item-title {
-      color: #007bff;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
+		<script defer src="./js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="./index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        <span class="nav-title">Portfolio Title</span>
+         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <a class="button" href="mailto:whitevans.eth@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
 
-    .experience-item-duration {
-      font-size: 14px;
-      font-style: italic;
-      margin-bottom: 10px;
-    }
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
 
-    .experience-item-description {
-      margin-bottom: 10px;
-    }
+      <!-- PORTFOLIO HEADER -->
+      <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
+          <!-- 
+            TODO
 
-    .certifications-item p {
-      margin-bottom: 10px;
-    }
+            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+            - Change the number to point to your Unemployable & replace the OpenSea link with your own
+            - If you aren't using an Unemployable as your image, remove the entire "a" element
+          -->
+          <img src="./assets/images/1311.png" class="portfolio-header-image">
+          <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
+            <span class="image-caption">Unemployables #1311</span>
+          </a>
+        </div>
 
-    .activities-item p {
-      margin-bottom: 10px;
-    }
-  </style>
-</head>
+          <!-- 
+            TODO
 
-<body>
-  <div class="container">
-    <h1>Saroj Kumar</h1>
-    <p>Phone: +917053526838 | Email: saroj57_scs@jnu.ac.in | LinkedIn: <a href="https://www.linkedin.com/in/saroj-kumar-173a6a108">https://www.linkedin.com/in/saroj-kumar-173a6a108</a></p>
-
-    <div class="section">
-      <h2 class="section-title">Education</h2>
-      <div class="education-item">
-        <h3 class="experience-item-title">Jawaharlal Nehru University</h3>
-        <p class="experience-item-duration">August 2019 - April 2022</p>
-        <p class="experience-item-description">Master of Technology in Computer Science</p>
-        <p class="experience-item-description">Percentage: 80.80%</p>
+            - Change the main-title to whatver you want
+            - Change the body-text after that to a quick introduction to what you do
+            - Edit the button text if you feel like it. It will link to the projects section below.
+          -->
+        <div id="portfolio-header-text-container">
+            <div class="header-text">
+              <span class="main-title">Hey, I'm @ndoherty_eth.</span>
+              <div class="body-text">I’m a freelance designer and developer who aims to help other creatives build out their portfolios, skillset, and businesses.</div>
+            </div>
+            <a class="button" id="my-work-link">
+              <span class="button-text">Check out my projects</span> 
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+        </div>
       </div>
 
-      <div class="education-item">
-        <h3 class="experience-item-title">Maharaja Surajmal Institute of Technology, Janakpuri</h3>
-        <p class="experience-item-duration">May 2014 - May 2018</p>
-        <p class="experience-item-description">Bachelor of Technology in Information Technology</p>
-        <p class="experience-item-description">Percentage: 78.71%</p>
+      <!-- ABOUT SECTION -->
+      <!-- 
+        TODO
+
+        - Change the subheader-text to whatever header you want
+        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+      -->
+      <div id="about-section">
+        <span class="subheader-text">My Background / About Me</span>
+        <div class="about-section-content">
+          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
+          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+        </div>
       </div>
 
-      <div class="education-item">
-        <h3 class="experience-item-title">Public School Darbhanga, Darbhanga</h3>
-        <p class="experience-item-duration">April 2017 - April 2018</p>
-        <p class="experience-item-description">All India Secondary School Examination</p>
-        <p class="experience-item-description">Grade: 9.6 CGPA</p>
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">My Work / My Projects</span>
+
+        <div class="projects-container">
+          <!-- 
+            TODO
+
+            This is where the project cards live. Here's a base level project card for you to copy:
+            <div class="project-card">
+              <img src="./assets/images/IMAGE_NAME" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">PROJECT_NAME</div>
+                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
+              </div>
+              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+
+            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+                - IMAGE_NAME: the name of the image file in assets/images
+                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
+                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
+                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+          -->
+          <div class="project-card">
+            <img src="./assets/images/desktop.jpeg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Project Name</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/code.jpeg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Project Name</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/sketchbook.jpeg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="section">
-      <h2 class="section-title">Relevant Experience</h2>
-      <div class="experience-item">
-        <h3 class="experience-item-title">Jawaharlal Nehru University (Genome Science and Technology Lab)</h3>
-        <p class="experience-item-duration">December 2021 - Present</p>
-        <p class="experience-item-description">Research Associate (Supervisor - Prof. Binay Ranjan Panda)</p>
-        <p class="experience-item-description">- Used a deep learning based approach to predict the azadirachtin content in Azadirachta Indica fruits.</p>
-        <p class="experience-item-description">- Predicted the sweetness of Citrus nobilis x Citrus deliciosa (Kinnow mandarin) fruits using the images of the fruits using YOLOv5 and YOLOR framework.</p>
-        <p class="experience-item-description">- Modified and custom trained SOTA YOLOv5 architecture using the in-house generated data of Azadirachta Indica fruit images and their corresponding azadirachtin metabolite content.</p>
-        <p class="experience-item-description">- Helped in the creation of an Android mobile app to detect the azadirachtin level in the Azadirachta Indica fruit.</p>
-      </div>
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- 
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
 
-      <div class="experience-item">
-        <h3 class="experience-item-title">Irenovate LLP (E-commerce platform)</h3>
-        <p class="experience-item-duration">December 2016 - January 2018</p>
-        <p class="experience-item-description">Web Developer</p>
-        <p class="experience-item-description">- Created the backend as well as the frontend of the website using Django, HTML, CSS, and Bootstrap 5.</p>
-        <p class="experience-item-description">- Developed technical competency in full-stack development of a website, including frontend and backend.</p>
-      </div>
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+        <image src="./assets/icons/instagram.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
+        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      </a>
     </div>
 
-    <div class="section">
-      <h2 class="section-title">Technical Competencies</h2>
-      <p>Programming languages: Python, C, C++, Java, and JavaScript</p>
-      <p>Libraries, Toolkits, and Frameworks: NumPy, Matplotlib, Pandas, Seaborn, Tableau, Scikit-Learn, Choregraphe, TensorFlow, PyTorch, Android Studio, Git, Flask, and Heroku</p>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Publications</h2>
-      <div class="publications-item">
-        <h3 class="experience-item-title">Kumar, Saroj and Choudhary, Ayesha (2022)</h3>
-        <p class="experience-item-description">Camera-based Activity Recognition for Assisted Living Applications, accepted at IEEE sponsored conference named eSmarTa, under publication</p>
-        <p class="experience-item-description">- Implemented a real-time fall detection system as part of camera-based activity recognition for assisted living applications.</p>
-        <p class="experience-item-description">- Repurposed YOLOv5, an object detector, for activity recognition to detect fall events using a camera in real time.</p>
-      </div>
-
-      <div class="publications-item">
-        <h3 class="experience-item-title">Udeechee and Kumar, Saroj (2022)</h3>
-        <p class="experience-item-description">Factors influencing contraceptive usage and related trends among Scheduled Caste and Scheduled Tribes women in India, Significance of Technology in Empowering Tribal Community of India, under publication</p>
-        <p class="experience-item-description">- Performed statistical analysis on NFHS 5 dataset to understand the use of family planning methods such as contraception among women in the Scheduled Caste and Scheduled Tribes community in India.</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-item">
-        <h3 class="experience-item-title">TRACKIT</h3>
-        <p class="experience-item-description">- Built a web app to track the location of a person and show the route they followed as they move around.</p>
-        <p class="experience-item-description">- Utilized GPS, cell tower, or WiFi triangulation to approximate the location.</p>
-      </div>
-
-      <div class="projects-item">
-        <h3 class="experience-item-title">FLIPBOARD</h3>
-        <p class="experience-item-description">- Implemented a web interface duplicating the functionality of the Flipboard platform using HTML, CSS, and Bootstrap 5.</p>
-      </div>
-
-      <div class="projects-item">
-        <h3 class="experience-item-title">Handwriting Recognition</h3>
-        <p class="experience-item-description">- Used the PyTorch library to implement a handwriting recognition framework.</p>
-        <p class="experience-item-description">- Utilized the publicly available MNIST dataset to recognize handwriting.</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Certifications and Courses</h2>
-      <div class="certifications-item">
-        <p>Machine Learning | Coursera (By Andrew Ng)</p>
-        <p>- Studied fundamental concepts of machine learning and implemented several algorithms.</p>
-      </div>
-
-      <div class="certifications-item">
-        <p>Introduction to Data Science in Python | University of Michigan</p>
-        <p>- Learned data manipulation and analysis using Python libraries like NumPy and Pandas.</p>
-      </div>
-
-      <div class="certifications-item">
-        <p>CS231n: Convolutional Neural Networks for Visual Recognition | Stanford University</p>
-        <p>- Learned about different CNN architectures and implemented key concepts from scratch.</p>
-      </div>
-
-      <div class="certifications-item">
-        <p>Core Java | Hewlett Packard Enterprise</p>
-        <p>- Learned core concepts of Java programming language.</p>
-      </div>
-
-      <div class="certifications-item">
-        <p>Flask | Udemy</p>
-        <p>- Learned the Flask framework in Python to create a blogging website.</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Extra-Curricular Activities</h2>
-      <div class="activities-item">
-        <p>Participated in NETCRYPT Conference</p>
-        <p>- Contributed to the successful completion of the 2nd International Conference on Networks and Cryptology.</p>
-      </div>
-
-      <div class="activities-item">
-        <p>Event head at Avensis, Annual fest of MSIT</p>
-        <p>- Organized a coding event and received the Best Event Award.</p>
-      </div>
-    </div>
-
-  </div>
-</body>
-
+	</body>
 </html>
-
