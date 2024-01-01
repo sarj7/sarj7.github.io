@@ -1,4 +1,4 @@
-Forked from: https://github.com/codewithsadee/vcard-personal-portfolio
+<!-- Forked from: https://github.com/codewithsadee/vcard-personal-portfolio
 
 # vCard - Personal portfolio
 
@@ -43,4 +43,4 @@ If you want to contact me you can reach me at [Twitter](https://www.twitter.com/
 
 ## License
 
-This project is **free to use** and does not contains any license.
+This project is **free to use** and does not contains any license. -->
